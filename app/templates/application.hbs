@@ -1,0 +1,23 @@
+<header>
+<h1>WAT Playground</h1>
+</header>
+
+<section id="wat-editor">
+{{code-editor mode="wast" value=wat onchange=(unbound this.watDidChange)}}
+</section>
+
+<section id="js-editor">
+{{code-editor mode="javascript" value=js onchange=(unbound this.jsDidChange)}}
+</section>
+
+<footer>
+<h2>Output</h2>
+<pre id="error" style="color:red">
+{{~error~}}
+</pre>
+<pre id="output">
+{{~output~}}
+</pre>
+</footer>
+
+{{outlet}}

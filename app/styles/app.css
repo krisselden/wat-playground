@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  height: 80px;
+}
+
+footer {
+  position: absolute;
+  right: 0; left: 0; bottom: 0;
+  height: 150px;
+}
+
+section > div {
+  height: 100%;
+}
+
+.CodeMirror {
+  border: 1px solid #eee;
+  height: 100%;
+}
+
+#wat-editor {
+  position: absolute;
+  top: 80px;
+  bottom: 150px;
+  right: 50%;
+  left: 0;
+}
+
+#js-editor {
+  position: absolute;
+  top: 80px;
+  bottom: 150px;
+  left: 50%;
+  right: 0;
+}

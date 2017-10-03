@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WAT Playground</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link integrity="" rel="stylesheet" href="{{rootURL}}third-party/codemirror/codemirror.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/wat-playground.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}third-party/codemirror/codemirror.js"></script>
+    <script src="{{rootURL}}third-party/codemirror/addon/mode/simple.js"></script>
+    <script src="{{rootURL}}third-party/codemirror/mode/javascript/javascript.js"></script>
+    <script src="{{rootURL}}third-party/wabt/wast-mode.js"></script>
+    <script src="{{rootURL}}third-party/wabt/libwabt.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/wat-playground.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
